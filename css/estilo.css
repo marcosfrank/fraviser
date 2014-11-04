@@ -1,0 +1,49 @@
+﻿.contenedor
+{
+    display:table;
+    margin: 0 auto;  
+    width: 50%;  
+}
+
+div#tierra 
+{
+    left:0px;
+    top:0px;
+    width:450px;
+    height:150px;
+    background-image: url('/Fraviser/images/hd-tierra.png'), url();
+    background-repeat: repeat;
+    z-index:1;
+    position:absolute;
+}
+
+div#sembradora{
+    position:absolute;
+    left:0px;
+    top:0px;
+    background-color:Green;   
+    width:30px;
+    height:150px;
+    z-index:3                ;
+}
+
+div.tierraArada
+{
+    background-image: url('/Fraviser/images/tierraArada.png'), url();
+    background-repeat: repeat;
+    z-index:2;    
+}
+div#tierraArada
+{
+    left:0px;
+    top:0px;
+    float:left;
+    position:absolute;
+}
+
+div#tierraArada2
+{
+    left:450px;
+    top:150px;
+    position:absolute;
+}
