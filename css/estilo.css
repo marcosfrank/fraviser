@@ -1,49 +1,90 @@
-﻿.contenedor
-{
-    display:table;
-    margin: 0 auto;  
-    width: 50%;  
+﻿body{
+    text-align:center;
 }
 
-div#tierra 
+
+/* --- HEADER ANIMACION --- */
+
+#contenedor
 {
-    left:0px;
-    top:0px;
+    position:relative;
+    margin: 0 auto;  
+    width:450px;
+    height:450px; 
+}
+
+.animacionHeaderFondo
+{
     width:450px;
     height:150px;
-    background-image: url('/Fraviser/images/hd-tierra.png'), url();
-    background-repeat: repeat;
-    z-index:1;
-    position:absolute;
 }
-
-div#sembradora{
+.animacionHeaderMaquina
+{
     position:absolute;
-    left:0px;
     top:0px;
-    background-color:Green;   
+    left:-30px;
     width:30px;
     height:150px;
-    z-index:3                ;
 }
 
-div.tierraArada
+.nivel1
 {
-    background-image: url('/Fraviser/images/tierraArada.png'), url();
-    background-repeat: repeat;
-    z-index:2;    
-}
-div#tierraArada
-{
+    position:absolute;
     left:0px;
     top:0px;
-    float:left;
-    position:absolute;
 }
 
-div#tierraArada2
+.nivel2
 {
-    left:450px;
-    top:150px;
     position:absolute;
+    left:0px;
+    top:150px;
 }
+
+.nivel3
+{
+    position:absolute;
+    left:0px;
+    top:300px;
+}
+
+
+.tierra 
+{
+    background-image: url('/Fraviser/images/ttierra.jpg'), url();
+}
+
+.tierra.impar 
+{
+    z-index: 1;
+}
+
+.tierra.par 
+{
+    z-index: 15;
+    width:450px;
+}
+
+.sembradora{
+    background-color:Green;
+    z-index:16;
+}
+
+.tierraSembrada
+{
+    background-image: url('/Fraviser/images/ttierraArada.jpg'), url();   
+}
+.tierraSembrada.impar
+{
+    background-image: url('/Fraviser/images/ttierraArada.jpg'), url();
+    z-index:2;
+    width:0px;
+}
+.tierraSembrada.par
+{
+    background-image: url('/Fraviser/images/ttierraArada.jpg'), url();
+    z-index:13;
+}
+
+
+
