@@ -25,6 +25,7 @@
     left:-30px;
     width:30px;
     height:150px;
+    transform-origin:50% bottom;
 }
 
 .nivel1
